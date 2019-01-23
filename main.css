@@ -1,0 +1,28 @@
+body {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;  
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    justify-content: left;
+    width: 100px;
+}
+
+.startPage {
+    display:block;
+    width: 50%;
+    margin-top: 350px;
+    margin-left: auto;
+    margin-right:auto;
+    border-radius: 2px;
+    text-align: center;
+    
+}
+
+
+
