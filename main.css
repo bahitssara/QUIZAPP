@@ -1,16 +1,32 @@
 body {
     box-sizing: border-box;
+    background-image:url('FullScreen.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-family: "swiss", sans-serif;
+    text-transform: uppercase;
 }
+
+
 
 header {
     display: flex;  
-    align-items: center;
+    
     justify-content: space-evenly;
 }
 
-.logo {
-    justify-content: left;
-    width: 100px;
+h1 {
+    color:white;
+    font-size: 50px;
+    text-shadow: 3px 3px palevioletred;
+
+}
+
+
+h2 {
+    color:white;
+    text-shadow: 1px 3px palevioletred;
+
 }
 
 .startPage {
@@ -24,5 +40,27 @@ header {
     
 }
 
+
+.question-pages {
+    font-family: "swiss", sans-serif;
+    color:white;
+    text-shadow: 1px 1px palevioletred;
+    
+    
+
+}
+
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border:none;
+    background: black;
+}
+
+.submit-button {
+
+    
+}
 
 

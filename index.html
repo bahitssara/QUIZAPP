@@ -5,24 +5,26 @@
         <title>The 1975 Quiz App</title>
         <meta name="description" content="Are you a fan of The 1975? We'll see about that!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+        <link rel="stylesheet" id="twentyfifteen-fonts-css" href="https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
         <header role='Banner'>
-            <img  class = "logo" src ="LOGO2.jpeg" alt ="LOGO2">
-                    <h1>Welcome Mate!</h1>
-
+            <h1>Welcome Mate!</h1>
         </header>
-        <main class = "startPage">
-        <div class ="main">
-            <h2>Do you know The 1975? I'll be the judge of that!</h2>
-        </div>
-            <button type="button" class ="startButton">Leg It!</button>
-        <div class = "questionPages"></div>
-    </main>
-
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <main>
+            <section class = "main-page"> 
+                <div class ="start-page">
+                    <h2>Do you know The 1975? I'll be the judge of that!</h2>
+                    <button type="button" class ="start-button">Leg It!</button>
+                </div>
+            </section>
+        </main>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.js"
+        integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+        crossorigin="anonymous"></script> 
+        <script src="dataset.js"></script>
         <script src="index.js" ></script>
     </body>
 </html>
