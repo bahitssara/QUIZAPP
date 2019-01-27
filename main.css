@@ -7,8 +7,6 @@ body {
     text-transform: uppercase;
 }
 
-
-
 header {
     display: flex;  
     
@@ -19,17 +17,14 @@ h1 {
     color:white;
     font-size: 50px;
     text-shadow: 3px 3px palevioletred;
-
 }
-
 
 h2 {
     color:white;
     text-shadow: 1px 3px palevioletred;
-
 }
 
-.startPage {
+.start-page {
     display:block;
     width: 50%;
     margin-top: 350px;
@@ -37,30 +32,126 @@ h2 {
     margin-right:auto;
     border-radius: 2px;
     text-align: center;
-    
+}
+
+.start-button {
+    font-size: 30px;
+    background-color:palevioletred;
+    color:white;
+    border: none;
+    border-radius: 3px;
+    padding:30px;
+    font-family: "swiss", sans-serif;
+    text-transform: uppercase;
 }
 
 
 .question-pages {
     font-family: "swiss", sans-serif;
     color:white;
-    text-shadow: 1px 1px palevioletred;
-    
-    
+    text-shadow: 2px 3px palevioletred;
+    padding: 75px;
+    text-align: center;
 
+}
+
+.question-counter {
+    text-align: center;
+    font-size: 45px;
+    text-shadow: 2px 3px palevioletred;
 }
 
 
 fieldset {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     border:none;
-    background: black;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 30px;
+
 }
 
-.submit-button {
-
+.radio-button {
+    vertical-align: middle;
     
 }
 
+.submit-button {
+    font-size: 20px;
+    background-color:palevioletred;
+    color:white;
+    border: none;
+    border-radius: 3px;
+    padding:30px;
+    font-family: "swiss", sans-serif;
+    text-transform: uppercase;
+    
+}
+
+.main-page {
+    display:flex;
+    flex-direction: column;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.correct-answer {
+    font-family: "swiss", sans-serif;
+    color:white;
+    text-shadow: 2px 2px palevioletred;
+    font-size: 25px;
+}
+
+.right-gif {
+    width: 300px;
+    height: auto;
+    margin-bottom:20px;
+
+}
+
+.gif-resize {
+    width: 300px;
+    height: auto;
+}
+
+.next-button {
+    font-size: 20px;
+    background-color:palevioletred;
+    color:white;
+    border: none;
+    width: 200px;
+    border-radius: 3px;
+    padding:30px;
+    font-family: "swiss", sans-serif;
+    text-transform: uppercase;
+}
+
+.results {
+    font-family: "swiss", sans-serif;
+    color:white;
+    text-shadow: 2px 2px palevioletred;
+    font-size: 25px;
+}
+
+.final-results {
+    width: 450px;
+    height: auto;
+    margin-bottom:20px;
+}
+
+.restart-button {
+    font-size: 20px;
+    background-color:palevioletred;
+    color:white;
+    border: none;
+    width: 200px;
+    border-radius: 3px;
+    padding:30px;
+    font-family: "swiss", sans-serif;
+    text-transform: uppercase;
+
+}
 

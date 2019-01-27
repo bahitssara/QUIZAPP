@@ -1,7 +1,7 @@
 'use strict';
 
 let questionNum = 0;
-let answerKey = 0;
+let answerTotal = 0;
 
 $(document).ready(function(){
    $('.start-button').on('click', renderQuestionPage)
@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 function renderQuestionPage() {
     const data = questionList[questionNum];
-    
+    if (questionNum < questionList.length){   
    $('.main-page').replaceWith( `
     <section class="question-pages">
         <p class="question-counter">${questionNum + 1}/10</p>
@@ -21,48 +21,80 @@ function renderQuestionPage() {
         <form>  
             <fieldset>
                 <label for="${data.choices[0]}">${data.choices[0]}</label>
-                <input type="radio" id="${data.choices[0]}" name="answerButton" value="${data.choices[0]}" checked> 
+                <input type="radio" id="${data.choices[0]}" class="radio-button" name="answerButton" value="${data.choices[0]}" checked> 
                 <label for="${data.choices[1]}">${data.choices[1]}</label>
-                <input type="radio" id="${data.choices[1]}" name="answerButton" value="${data.choices[1]}" checked>
+                <input type="radio" id="${data.choices[1]}" class="radio-button" name="answerButton" value="${data.choices[1]}" checked>
                 <label for="${data.choices[2]}">${data.choices[2]}</label>
-                <input type="radio" id="${data.choices[2]}" name="answerButton" value="${data.choices[2]}" checked>
+                <input type="radio" id="${data.choices[2]}" class="radio-button" name="answerButton" value="${data.choices[2]}" checked>
                 <label for="${data.choices[3]}">${data.choices[3]}</label>
-                <input type="radio" id="${data.choices[3]}" name="answerButton" value="${data.choices[3]}" checked>
+                <input type="radio" id="${data.choices[3]}" class="radio-button" name="answerButton" value="${data.choices[3]}" checked>
             </fieldset>
             <button class="submit-button">Submit</button>
         </form>
     </section>`
    )
+    } else {
+        renderResultsPage();
+    }
     $('.submit-button').on('click', submitAnswer)
-    questionNum++;
+    
 }
 
 
 function rightAnswerPage() {
-    $('question-pages').replaceWith(`<section class=answerFeedback>
-    <h2>Cheers! Looks like I've got some competition!</h2>
-    <img src="ANSWERRIGHT.gif" alt="Sincerity is Scary Dancing">
-    <button class ="nextButton">FORWARD MATE</button>
+    $('.question-pages').replaceWith(`
+    <section class='main-page'>
+        <h2>Cheers! Looks like I've got some competition!</h2>
+        <img src="YesRight2.gif" class="right-gif" alt="Sincerity is Scary Dancing">
+        <button class="next-button">FORWARD MATE</button>
     </section>`)
+
 }
 
 function wrongAnswerPage(){
-    $('question-pages').replaceWith(`<section class=answerFeedback>
+    const correctAnswer = `${questionList[questionNum].rightAnswer}`
+    $('.question-pages').replaceWith(`
+    <section class='main-page'>
     <h2>Bollocks, seems like you still got some googling to do!</h2>
-    <img src="ANSWERWRONG.gif" alt ="Matty singing">
-    <button class="nextButton">MOVING ON</button>
+    <img src="MattyWrong2.gif" class="gif-resize" alt ="Matty singing">
+    <p class="correct-answer">The right answer is : ${correctAnswer} !</p>
+    <button class="next-button">MOVING ON</button>
     </section>`)
+
 }
 
 
 function submitAnswer(e){
-    const check = questionList[rightAnswer];
     e.preventDefault();
+    const check = questionList[questionNum]; 
     const checkAnswer = $('input[name=answerButton]:checked').val();
+
     if (checkAnswer === check.rightAnswer){
         rightAnswerPage(); 
-        }else {
+        answerTotal++;
+    } else {
         wrongAnswerPage();
-        }
+    }
+    
+    $('.next-button').on('click', renderQuestionPage)
+    questionNum++;
 }
+
+
+function renderResultsPage(){
+    $('.main-page').replaceWith(`
+    <section class='main-page'>
+    <h2>The results are in!</h2>
+    <img src="finalresults.gif" class="final-results" alt="matty dancing">
+    <p class="results">You got ${answerTotal}/10!</p>
+    <button class="restart-button">Try Again?</button>
+    </section>
+    `)
+
+    $('.restart-button').on('click', function(event){
+        location.reload();
+    });
+}
+
+
 
