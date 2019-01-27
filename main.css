@@ -1,33 +1,32 @@
 body {
     box-sizing: border-box;
-    background-image:url('FullScreen.jpg');
-    background-size:cover;
-    background-repeat: no-repeat;
     font-family: "swiss", sans-serif;
     text-transform: uppercase;
 }
 
 header {
     display: flex;  
-    
     justify-content: space-evenly;
 }
 
 h1 {
     color:white;
-    font-size: 50px;
-    text-shadow: 3px 3px palevioletred;
+    font-size: 55px;
+    text-shadow: 1px 2px 4px palevioletred;
 }
 
 h2 {
     color:white;
-    text-shadow: 1px 3px palevioletred;
+    text-shadow: 1px 3px 4px palevioletred;
+    font-size:40px;
+    text-align: center;
 }
 
 .start-page {
     display:block;
     width: 50%;
-    margin-top: 350px;
+    margin-top: 200px;
+    margin-bottom:150px;
     margin-left: auto;
     margin-right:auto;
     border-radius: 2px;
@@ -39,8 +38,9 @@ h2 {
     background-color:palevioletred;
     color:white;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     padding:30px;
+    margin-bottom:50px;
     font-family: "swiss", sans-serif;
     text-transform: uppercase;
 }
@@ -49,16 +49,19 @@ h2 {
 .question-pages {
     font-family: "swiss", sans-serif;
     color:white;
-    text-shadow: 2px 3px palevioletred;
-    padding: 75px;
+    text-shadow: 2px 2px 3px palevioletred;
+    padding: 150px;
     text-align: center;
-
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .question-counter {
     text-align: center;
     font-size: 45px;
-    text-shadow: 2px 3px palevioletred;
+    text-shadow: 1px 2px 3px palevioletred;
 }
 
 
@@ -70,12 +73,10 @@ fieldset {
     margin-left:auto;
     margin-right:auto;
     font-size: 30px;
-
 }
 
-.radio-button {
-    vertical-align: middle;
-    
+input {
+    border: color white solid 1px;
 }
 
 .submit-button {
@@ -86,30 +87,31 @@ fieldset {
     border-radius: 3px;
     padding:30px;
     font-family: "swiss", sans-serif;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;  
 }
 
 .main-page {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    margin-left:auto;
-    margin-right:auto;
-
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius:5px;
+    margin-bottom: 30px;
+    margin: 20px;
 }
 
 .correct-answer {
     font-family: "swiss", sans-serif;
     color:white;
-    text-shadow: 2px 2px palevioletred;
+    text-shadow: 1px 2px 3px palevioletred;
     font-size: 25px;
+    text-align: center;
 }
 
 .right-gif {
     width: 300px;
     height: auto;
     margin-bottom:20px;
-
 }
 
 .gif-resize {
@@ -118,13 +120,14 @@ fieldset {
 }
 
 .next-button {
-    font-size: 20px;
+    font-size: 15px;
     background-color:palevioletred;
     color:white;
     border: none;
     width: 200px;
+    margin-bottom:20px;
     border-radius: 3px;
-    padding:30px;
+    padding:25px;
     font-family: "swiss", sans-serif;
     text-transform: uppercase;
 }
@@ -132,8 +135,9 @@ fieldset {
 .results {
     font-family: "swiss", sans-serif;
     color:white;
-    text-shadow: 2px 2px palevioletred;
-    font-size: 25px;
+    text-shadow: 1px 2px 3px palevioletred;
+    font-size: 35px;
+    text-align: center;
 }
 
 .final-results {
@@ -152,6 +156,40 @@ fieldset {
     padding:30px;
     font-family: "swiss", sans-serif;
     text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 320px) {
+    
+    body {
+        background-image: url('Mobile.jpg');
+        background-size: cover;
+        
+    }
+
+    h1 {
+        text-size-adjust: 30%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 765px) {
+
+    body {
+        background-image: url('uneasy-icon.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
 }
 
+
+@media screen and (min-width: 1000px){
+
+    body {
+        background-image: url('FullScreen.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+}

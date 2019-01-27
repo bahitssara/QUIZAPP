@@ -8,9 +8,6 @@ $(document).ready(function(){
 
 })
 
-
-
-
 function renderQuestionPage() {
     const data = questionList[questionNum];
     if (questionNum < questionList.length){   
@@ -85,7 +82,7 @@ function renderResultsPage(){
     $('.main-page').replaceWith(`
     <section class='main-page'>
     <h2>The results are in!</h2>
-    <img src="finalresults.gif" class="final-results" alt="matty dancing">
+    <img src="finalresult2.gif" class="final-results" alt="matty dancing">
     <p class="results">You got ${answerTotal}/10!</p>
     <button class="restart-button">Try Again?</button>
     </section>
