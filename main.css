@@ -90,16 +90,17 @@ input {
     float:left;
 }
 
-input[type=radio] {
-    flex: 0 0 auto;
-    margin-right: 10px;
+input:checked {
+    border: 13px solid palevioletred;
 }
 
+input:hover {
+    transform: scale(1.1);
+}
 
-  input:checked {
-    border: 6px solid palevioletred;
-  }
-  
+label:hover {
+    transform: scale(1.1);
+}
 
 .submit-button:hover{
     background-color:white;
@@ -223,13 +224,11 @@ input[type=radio] {
         text-align: center;
         font-size: 15px;
         text-shadow: 1px 1px 2px palevioletred;
-
     }
 
     .score-count {
         font-size: 15px;
         text-shadow: 1px 1px 2px palevioletred;
-    
     }
 
     fieldset{
@@ -239,9 +238,7 @@ input[type=radio] {
     .final-results {
         display: flex;
         max-width: 75%; 
-    }
-
-    
+    }  
 }
 
 @media screen and (min-width: 765px) {
@@ -275,7 +272,6 @@ input[type=radio] {
     fieldset{
         font-size: 25px;
     }
-
 }
 
 

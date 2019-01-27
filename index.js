@@ -13,7 +13,7 @@ function renderQuestionPage() {
     if (questionNum < questionList.length){   
    $('.main-page').replaceWith( `
     <section class="question-pages">
-        <p class="question-counter">Question${questionNum + 1}</p>
+        <p class="question-counter">Question ${questionNum + 1}</p>
         <p class ="score-count">Score:${answerTotal}/10</p>
         <h2>${data.question}</h2>
         <form>  
@@ -53,10 +53,10 @@ function wrongAnswerPage(){
     const correctAnswer = `${questionList[questionNum].rightAnswer}`
     $('.question-pages').replaceWith(`
     <section class='main-page'>
-    <h2>Bollocks, seems like you still got some googling to do!</h2>
-    <img src="MattyWrong2.gif" class="gif-resize" alt ="Matty singing">
-    <p class="correct-answer">The right answer is : ${correctAnswer} !</p>
-    <button class="next-button">MOVING ON</button>
+        <h2>Bollocks, seems like you still got some googling to do!</h2>
+        <img src="MattyWrong2.gif" class="gif-resize" alt ="Matty singing">
+        <p class="correct-answer">The right answer is : ${correctAnswer} !</p>
+        <button class="next-button">MOVING ON</button>
     </section>`)
 
 }
@@ -82,10 +82,10 @@ function submitAnswer(e){
 function renderResultsPage(){
     $('.main-page').replaceWith(`
     <section class='main-page'>
-    <h2>The results are in!</h2>
-    <img src="finalresult2.gif" class="final-results" alt="matty dancing">
-    <p class="results">You got ${answerTotal}/10!</p>
-    <button class="restart-button">Try Again?</button>
+        <h2>The results are in!</h2>
+        <img src="finalresult2.gif" class="final-results" alt="matty dancing">
+        <p class="results">You got ${answerTotal}/10!</p>
+        <button class="restart-button">Try Again?</button>
     </section>
     `)
 
