@@ -13,7 +13,8 @@ function renderQuestionPage() {
     if (questionNum < questionList.length){   
    $('.main-page').replaceWith( `
     <section class="question-pages">
-        <p class="question-counter">${questionNum + 1}/10</p>
+        <p class="question-counter">Question${questionNum + 1}</p>
+        <p class ="score-count">Score:${answerTotal}/10</p>
         <h2>${data.question}</h2>
         <form>  
             <fieldset>
