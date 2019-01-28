@@ -18,14 +18,14 @@ function renderQuestionPage() {
         <h2>${data.question}</h2>
         <form>  
             <fieldset>
-                <label for="${data.choices[0]}">${data.choices[0]}</label>
-                <input type="radio" id="${data.choices[0]}" class="radio-button" name="answerButton" value="${data.choices[0]}" checked> 
-                <label for="${data.choices[1]}">${data.choices[1]}</label>
-                <input type="radio" id="${data.choices[1]}" class="radio-button" name="answerButton" value="${data.choices[1]}" checked>
-                <label for="${data.choices[2]}">${data.choices[2]}</label>
-                <input type="radio" id="${data.choices[2]}" class="radio-button" name="answerButton" value="${data.choices[2]}" checked>
-                <label for="${data.choices[3]}">${data.choices[3]}</label>
-                <input type="radio" id="${data.choices[3]}" class="radio-button" name="answerButton" value="${data.choices[3]}" checked>
+                <label for="${data.choices[0]}">
+                <input type="radio" id="${data.choices[0]}" class="radio-button" name="answerButton" value="${data.choices[0]}" checked>${data.choices[0]}</label>
+                <label for="${data.choices[1]}">
+                <input type="radio" id="${data.choices[1]}" class="radio-button" name="answerButton" value="${data.choices[1]}" checked>${data.choices[1]}</label>
+                <label for="${data.choices[2]}">
+                <input type="radio" id="${data.choices[2]}" class="radio-button" name="answerButton" value="${data.choices[2]}" checked>${data.choices[2]}</label>
+                <label for="${data.choices[3]}">
+                <input type="radio" id="${data.choices[3]}" class="radio-button" name="answerButton" value="${data.choices[3]}" checked>${data.choices[3]}</label>
             </fieldset>
             <button class="submit-button">Submit</button>
         </form>
