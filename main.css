@@ -47,9 +47,14 @@ h2 {
 .start-button:hover {
     background-color:white;
     color:black;
+    cursor: pointer;
 }
 
-
+legend {
+    color:white;
+    text-shadow: 1px 4px 5px palevioletred;
+    text-align:center;
+}
 
 .question-pages {
     font-family: "swiss", sans-serif;
@@ -99,15 +104,18 @@ input:checked {
 
 input:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 label:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .submit-button:hover{
     background-color:white;
     color:black;
+    cursor: pointer;
 }
 
 
@@ -169,6 +177,7 @@ label:hover {
 .next-button:hover {
     background-color:white;
     color:black;
+    cursor: pointer;
 }
 
 
@@ -202,7 +211,7 @@ label:hover {
 .restart-button:hover {
     background-color:white;
     color:black;
-
+    cursor: pointer;
 }
 
 @media screen and (min-width: 320px) {
@@ -210,6 +219,7 @@ label:hover {
     body {
         background-image: url('Mobile.jpg');
         background-size: cover;
+        background-repeat: no-repeat;
         
     }
 
@@ -218,7 +228,7 @@ label:hover {
         text-align: center;
     }
 
-    h2 {
+    legend {
         font-size:20px;
 
     }
@@ -247,7 +257,7 @@ label:hover {
 @media screen and (min-width: 765px) {
 
     body {
-        background-image: url('uneasy-icon.jpg');
+        background-image: url('Mobile.jpg');
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -256,7 +266,7 @@ label:hover {
         font-size: 30px;
     }
 
-    h2 {
+    legend {
         font-size: 25px;
     }
 
@@ -282,15 +292,15 @@ label:hover {
 
     body {
         background-image: url('FullScreen.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-repeat: repeat-y;
     }
 
     h1{
         font-size: 55px;
     }
     
-    h2 {
+    legend {
         font-size:40px;
     }
 

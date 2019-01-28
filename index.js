@@ -5,7 +5,6 @@ let answerTotal = 0;
 
 $(document).ready(function(){
    $('.start-button').on('click', renderQuestionPage)
-
 })
 
 function renderQuestionPage() {
@@ -15,8 +14,8 @@ function renderQuestionPage() {
     <section class="question-pages">
         <p class="question-counter">Question ${questionNum + 1}</p>
         <p class ="score-count">Score:${answerTotal}/10</p>
-        <h2>${data.question}</h2>
-        <form>  
+        <form> 
+        <legend>${data.question}</legend>
             <fieldset>
                 <label for="${data.choices[0]}">
                 <input type="radio" id="${data.choices[0]}" class="radio-button" name="answerButton" value="${data.choices[0]}" checked>${data.choices[0]}</label>
@@ -77,7 +76,6 @@ function submitAnswer(e){
     $('.next-button').on('click', renderQuestionPage)
     questionNum++;
 }
-
 
 function renderResultsPage(){
     $('.main-page').replaceWith(`
