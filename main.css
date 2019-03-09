@@ -217,7 +217,7 @@ label:hover {
 @media screen and (min-width: 320px) {
     
     body {
-        background-image: url('Mobile.jpg');
+        background-image: url('images/Mobile.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         
@@ -257,7 +257,7 @@ label:hover {
 @media screen and (min-width: 765px) {
 
     body {
-        background-image: url('Mobile.jpg');
+        background-image: url('images/Mobile.jpg');
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -291,7 +291,7 @@ label:hover {
 @media screen and (min-width: 1000px){
 
     body {
-        background-image: url('FullScreen.jpg');
+        background-image: url('images/FullScreen.jpg');
         background-size: 100% 100%;
         background-repeat: repeat-y;
     }

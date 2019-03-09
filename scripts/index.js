@@ -42,7 +42,7 @@ function rightAnswerPage() {
     $('.question-pages').replaceWith(`
     <section class='main-page'>
         <h2>Cheers! Looks like I've got some competition!</h2>
-        <img src="YesRight2.gif" class="right-gif" alt="Sincerity is Scary Dancing">
+        <img src="images/YesRight2.gif" class="right-gif" alt="Sincerity is Scary Dancing">
         <button class="next-button">FORWARD MATE</button>
     </section>`)
 
@@ -53,7 +53,7 @@ function wrongAnswerPage(){
     $('.question-pages').replaceWith(`
     <section class='main-page'>
         <h2>Bollocks, seems like you still got some googling to do!</h2>
-        <img src="MattyWrong2.gif" class="gif-resize" alt ="Matty singing">
+        <img src="images/MattyWrong2.gif" class="gif-resize" alt ="Matty singing">
         <p class="correct-answer">The right answer is : ${correctAnswer} !</p>
         <button class="next-button">MOVING ON</button>
     </section>`)
@@ -81,7 +81,7 @@ function renderResultsPage(){
     $('.main-page').replaceWith(`
     <section class='main-page'>
         <h2>The results are in!</h2>
-        <img src="finalresult2.gif" class="final-results" alt="matty dancing">
+        <img src="images/finalresult2.gif" class="final-results" alt="matty dancing">
         <p class="results">You got ${answerTotal}/10!</p>
         <button class="restart-button">Try Again?</button>
     </section>
