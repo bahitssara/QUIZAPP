@@ -1,4 +1,4 @@
-# Big Music Guy
+# The 1975 Quiz App
 
 Live app can be viewed here: <a href="https://bahitssara.github.io/QUIZAPP/" target="_blank">Live App</a>
 

@@ -37,7 +37,6 @@ function renderQuestionPage() {
     
 }
 
-
 function rightAnswerPage() {
     $('.question-pages').replaceWith(`
     <section class='main-page'>
@@ -59,7 +58,6 @@ function wrongAnswerPage(){
     </section>`)
 
 }
-
 
 function submitAnswer(e){
     e.preventDefault();
